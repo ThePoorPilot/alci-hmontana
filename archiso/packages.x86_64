@@ -4,6 +4,7 @@ arch-install-scripts
 archinstall
 b43-fwcutter
 base
+bash
 bind
 brltty
 broadcom-wl
@@ -33,7 +34,7 @@ gnu-netcat
 gpart
 gpm
 gptfdisk
-grml-zsh-config
+#grml-zsh-config
 grub
 hdparm
 hyperv
@@ -113,7 +114,7 @@ usb_modeswitch
 usbmuxd
 usbutils
 vim
-virtualbox-guest-utils-nox
+#virtualbox-guest-utils-nox
 vpnc
 wireless-regdb
 wireless_tools
@@ -121,7 +122,7 @@ wpa_supplicant
 wvdial
 xfsprogs
 xl2tpd
-zsh
+#zsh
 
 
 # everything above comes from archiso releng folder
@@ -134,11 +135,11 @@ zsh
 ###             VIA CALAMARES CONFIG                ###
 #######################################################
 
-alci-dwm
+#alci-dwm
 #alci-dwm-nemesis
 alci-calamares
 #alci-calamares-dev
-alci-calamares-config
+alci-calamares-config-hmontana
 #alci-calamares-config-btrfs
 #alci-calamares-config-dev
 #alci-calamares-config-hardened
@@ -164,8 +165,8 @@ xorg-xrdb
 mkinitcpio-openswap
 
 ##### you can also use nmtui from the terminal
-#networkmanager
-#network-manager-applet
+networkmanager
+network-manager-applet
 
 #######################################################
 ###                    EXTRAS                       ###
@@ -173,9 +174,9 @@ mkinitcpio-openswap
 
 ##### xorg applications
 
-#xorg-server
-#xorg-apps
-#neofetch
+xorg-server
+xorg-apps
+neofetch
 
 
 ##### Drivers for graphical cards
@@ -184,11 +185,11 @@ mkinitcpio-openswap
 #systemctl enable vboxservice
 #systemctl start vboxservice
 #to have fullscreen
-#virtualbox-guest-utils
+virtualbox-guest-utils
 
-#xf86-video-intel
-#xf86-video-amdgpu
-#xf86-video-nouveau
+xf86-video-intel
+xf86-video-amdgpu
+xf86-video-nouveau
 
 #nvidia
 #nvidia-settings
@@ -203,7 +204,7 @@ mkinitcpio-openswap
 
 ##### sddm display manager
 
-#sddm
+sddm
 #alci-sddm-plasma-archpaint
 
 ##### gdm display manager
@@ -214,13 +215,16 @@ mkinitcpio-openswap
 
 ##### want to have base-devel group
 
-#base-devel
+base-devel
 
 ##### want to have linux-headers
 
-#linux-headers
+linux-headers
 
+#### kde 4.2.2
 
+hmontana-dependencies
+hmontana-kubuntu-desktop
 
 ##### want to have a desktop
 
@@ -266,3 +270,11 @@ mkinitcpio-openswap
 #grub-btrfs
 #timeshift-autosnap
 git
+
+#### audio
+pipewire-media-session
+pipewire-alsa
+pipewire-pulse
+
+#### comfort
+firefox
